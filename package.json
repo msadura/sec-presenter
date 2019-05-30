@@ -3,8 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.0.1",
+    "@material-ui/icons": "^4.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-full-screen": "^0.2.4",
     "react-scripts": "3.0.1",
     "styled-components": "^4.2.0"
   },
