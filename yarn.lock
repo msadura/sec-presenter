@@ -8203,6 +8203,13 @@ react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.0, react-is@^16.8.1, react-is
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.6.tgz#5bbc1e2d29141c9fbdfed456343fe2bc430a6a16"
   integrity sha512-aUk3bHfZ2bRSVFFbbeVS4i+lNPZr3/WM5jT2J5omUVV1zzcs1nAaf3l51ctA5FFvCRbhrH0bdAsRRQddFJZPtA==
 
+react-new-window@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/react-new-window/-/react-new-window-0.1.1.tgz#369c180fedcfa0ff3ea35a7bf44ae2caf30bd553"
+  integrity sha512-OgKqVX/9FjCHi/mQLbEN2TzWYqT2DIAtXY8vdpV2DIeGHz8gzMYRjO9Gi71Eaqt6e2PKv/+37aLdoLFG4DCMIQ==
+  dependencies:
+    prop-types "^15.7.2"
+
 react-scripts@3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/react-scripts/-/react-scripts-3.0.1.tgz#e5565350d8069cc9966b5998d3fe3befe3d243ac"

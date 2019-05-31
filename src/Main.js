@@ -1,5 +1,6 @@
 import React,  { Component } from 'react';
 import Fullscreen from "react-full-screen";
+import Grid from '@material-ui/core/Grid';
 
 import logo from './logo.svg';
 import './App.css';
@@ -34,8 +35,10 @@ class App extends Component {
           Post message
           </button>
           <ChannelManager ref={instance => this.channelManager = instance} channelName="sec-presenter" onMessage={(data) => console.log('MESSAGE', data)} />
-  
-        <Fullscreen
+
+        <Grid container>
+          <Grid item xs={12} md={6}>
+          <Fullscreen
           enabled={this.state.isFull}
           onChange={isFull => this.setState({ isFull })}
         >
@@ -54,6 +57,11 @@ class App extends Component {
           </a>
           </header>
         </Fullscreen>
+          </Grid>
+          <Grid item xs={12} md={6}>
+            Panel here
+          </Grid>
+        </Grid>
       </div>
     );
   }
