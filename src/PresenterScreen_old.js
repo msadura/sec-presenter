@@ -6,7 +6,7 @@ import logo from './logo.svg';
 import './App.css';
 import ChannelManager from './components/ChannelManager';
 
-class PresenterScreen extends Component {
+class PresenterScreen_old extends Component {
   constructor(props) {
     super();
 
@@ -35,6 +35,7 @@ class PresenterScreen extends Component {
   channelManager;
 
   render() {
+ 
     return (
       <div className="App">
         <button onClick={this.goFull}>
@@ -54,16 +55,8 @@ class PresenterScreen extends Component {
               <header className="App-header">
                 <img src={`${window.location.origin}/${logo}`} className="App-logo" alt="logo" />
                 <p>
-                  Edit <code>src/App.js</code> and save to reload.
+                  Count: ${this.props.count || '-'}
                 </p>
-                <a
-                  className="App-link"
-                  href="https://reactjs.org"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Learn React
-                </a>
               </header>
             </Fullscreen>
           </Grid>
@@ -73,4 +66,4 @@ class PresenterScreen extends Component {
   }
 }
 
-export default PresenterScreen;
+export default PresenterScreen_old;

@@ -1,0 +1,1 @@
+export const RIDERS_COUNT = 18;
