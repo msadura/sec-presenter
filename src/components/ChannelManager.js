@@ -16,12 +16,12 @@ export default class ChannelManager extends PureComponent {
     onMessage && onMessage(e.data);
   }
 
-  postMessage(command, payload) {
+  postMessage(type, payload) {
     if (!this.channel) {
       return;
     }
 
-    this.channel.postMessage({ command, payload });
+    this.channel.postMessage({ type, payload });
   }
 
   channel;
