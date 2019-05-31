@@ -3,6 +3,7 @@ import Fullscreen from "react-full-screen";
 
 import logo from './logo.svg';
 import './App.css';
+import ChannelManager from './components/ChannelManager';
 
 class App extends Component {
   constructor(props) {
@@ -17,12 +18,22 @@ class App extends Component {
     this.setState({ isFull: true });
   }
 
+  postMessage = () => {
+    this.channelManager && this.channelManager.postMessage('test', { riders: [] })
+  }
+
+  channelManager;
+
   render() {
     return (
       <div className="App">
         <button onClick={this.goFull}>
           Go Fullscreen
           </button>
+          <button onClick={this.postMessage}>
+          Post message
+          </button>
+          <ChannelManager ref={instance => this.channelManager = instance} channelName="sec-presenter" onMessage={(data) => console.log('MESSAGE', data)} />
   
         <Fullscreen
           enabled={this.state.isFull}
